@@ -1,0 +1,57 @@
+// -------------------------------------------------
+// Flask Typography + Standard Element Defaults
+// ---------------------------------------------- */
+
+* { @include box-sizing('border-box'); }
+
+/* iOS fixes */
+html { -webkit-text-size-adjust: none; }
+input[type=submit] { -webkit-appearance: none; -moz-appearance: none; }
+
+
+body {
+	color: $body-color;
+	font-family: $body-font;
+	font-size: 100%;
+	font-weight: normal;
+	line-height: 1.5em;
+}
+a {
+	color: $link-color;
+	&:hover{
+		color: $link-hover;
+	}
+}
+h1 {
+	color: $heading-color;
+	font-family: $heading-font;
+	font-size: 1.5em;  /* 16x1.5=24 */
+	line-height: 1em; /* 48px */
+}
+h2 {
+	color: $heading-color; /* 24px */
+	font-size: 1.3125em;   /* 16x1.5=21 */
+}
+h3 {
+	color: $heading-color;
+	font-size: 1.125em; /* 16x1.125=18 */
+	line-height: 1.33333333333333em; /* 24px */
+}
+h4 {
+	color: $heading-color;
+	font-size: 0.875em; /* 16x0.875=14 */
+	line-height: 1.71428571428571em; /* 24px */
+}
+p {
+	font-size: 1em;		/* 16x1=16 */
+	padding-bottom: 1em;
+}
+ul {
+	list-style: disc;
+	margin: 0 0 0 1.1em;
+	padding-bottom: 1em;
+	nav & { // remove styling for nav ul's
+		@include ul-reset;
+		a { text-decoration: none; }
+	}
+}

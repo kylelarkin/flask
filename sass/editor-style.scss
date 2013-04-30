@@ -1,0 +1,12 @@
+@import "partials/reset";
+@import "partials/flask-framework";
+@import "partials/flask-typography";
+
+// -------------------------------------------------
+// Editor Styles
+// ---------------------------------------------- */
+
+#tinymce {
+	font-family: $body-font;	
+	padding: 10px;
+}

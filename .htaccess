@@ -1,0 +1,32 @@
+Options All -Indexes
+
+# Hide source control files and directories.
+RedirectMatch 404 "(?:.*)/(?:[.#].*)$"
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+# BEGIN Gzip
+<IfModule mod_deflate.c>
+	AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css text/javascript text/richtext text/x-component application/xml application/xhtml+xml application/rss+xml application/json application/javascript application/x-javascript image/svg+xml image/x-icon
+</IfModule>
+# END Gzip
+
+# BEGIN Entity Tag Expiration: http://stuntsnippets.com/etags-htaccess/
+FileETag MTime Size
+<ifmodule mod_expires.c>
+  <filesmatch "\.(jpg|gif|png|ico|css|js)$">
+       ExpiresActive on
+       ExpiresDefault "access plus 1 year"
+   </filesmatch>
+</ifmodule>
+# End Entity Tag

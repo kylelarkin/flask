@@ -1,0 +1,61 @@
+/* SCSS Framework boilerplate from Flask: https://github.com/kylelarkin/flask */
+// -------------------------------------------------
+// Flask Bourbon Imports
+// ---------------------------------------------- */
+@import "bourbon";
+@import "grid_settings";
+@import "neat/neat";
+
+
+// -------------------------------------------------
+// Flask Variables
+// ---------------------------------------------- */
+$heading-font: Helvetica, Arial, sans-serif;
+$body-font: Helvetica, Arial, sans-serif;
+
+$body-color: #555;
+$heading-color: #333;
+$highlight-color: #ccc;
+$link-color: #333;
+$link-hover: #000;
+
+
+// -------------------------------------------------
+// Custom Text Selection Setup
+// ---------------------------------------------- */
+body,select,input,textarea{color:#333;}
+/* Custom text-selection colors (remove any text shadows:twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background:$highlight-color;color:#000;text-shadow:none;}
+::selection{background:$highlight-color;color:#000;text-shadow:none;}
+/* j.mp/webkit-tap-highlight-color */
+a:link{-webkit-tap-highlight-color:$highlight-color;}
+ins{background-color:$highlight-color;color:#000;text-decoration:none;}
+mark{background-color:$highlight-color;color:#000;font-style:italic;font-weight:bold;}
+
+
+// -------------------------------------------------
+// Flask Mixins
+// ---------------------------------------------- */
+
+// Logo Setup
+@mixin logo {
+	@include retina-image('null', 0, 0); // ('file_name_sans_extension', height, width)
+	background-repeat: no-repeat;
+	display: block;
+	height: 0; // Set height
+	text-indent: -999px;
+	width: 0; // Set width
+}
+				
+// Remove UL Styling
+@mixin ul-reset {
+	list-style: none;
+	margin: 0;
+	padding-bottom: 0;
+}
+
+// Rem Font Sizing
+@mixin font-size-rem($size: 1.6){
+  font-size: ($size * 10) + px;
+  font-size: $size + rem;
+}
