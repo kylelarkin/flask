@@ -10,7 +10,7 @@ enquire.register("screen and (min-width:580px)", {
     },
     unmatch: function() {
 	    $('.nav-wrapper').prependTo('body');
-    },    
+    }   
 
-}).listen(10);
+});
 */

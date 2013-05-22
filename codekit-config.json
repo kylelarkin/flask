@@ -26,26 +26,16 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/sass\/neat\/grid\/_fill-parent.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/neat\/grid\/_fill-parent.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/sass\/neat\/css\/_fill-parent.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/js\/PIE.php" : {
+    "\/img\/wp-login-logo-flask.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/PIE.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/img\/wp-login-logo-flask.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/wp-login-logo-flask.png",
+      "initialSize" : 4511,
+      "fileType" : 8192
     },
     "\/header.php" : {
       "ignoreWasSetByUser" : 0,
@@ -67,6 +57,15 @@
       "outputAbbreviatedPath" : "\/sass\/css\/_neat.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/js\/PIE.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/PIE.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/sidebar.php" : {
       "ignoreWasSetByUser" : 0,
@@ -281,6 +280,15 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/single.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/single.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/js\/enquire.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -291,15 +299,6 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/js\/enquire.min-min.js",
       "fileType" : 64
-    },
-    "\/single.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/single.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/sass\/neat\/grid\/_media.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -354,17 +353,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/js\/script-min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/script-min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/script-min-min.js",
-      "fileType" : 64
-    },
     "\/sass\/editor-style.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -376,6 +364,17 @@
       "outputAbbreviatedPath" : "\/css\/editor-style.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/js\/script-min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/script-min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/script-min-min.js",
+      "fileType" : 64
     },
     "\/front-page.php" : {
       "ignoreWasSetByUser" : 0,
@@ -425,15 +424,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/wp-config.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/wp-config.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/sass\/neat\/_neat-helpers.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -445,6 +435,15 @@
       "outputAbbreviatedPath" : "\/sass\/css\/_neat-helpers.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/wp-config.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/wp-config.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/css\/print.css" : {
       "ignoreWasSetByUser" : 0,
@@ -565,16 +564,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/img\/wp-login-logo-flask.png" : {
+    "\/sass\/neat\/grid\/_fill-parent.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/wp-login-logo-flask.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/wp-login-logo-flask.png",
-      "initialSize" : 4511,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/sass\/neat\/grid\/_fill-parent.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/sass\/neat\/css\/_fill-parent.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/css\/ie.css" : {
       "ignoreWasSetByUser" : 0,
