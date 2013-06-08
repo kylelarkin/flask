@@ -1,0 +1,114 @@
+/* IE<9 Overrides */
+/* SCSS Framework boilerplate from Flask: https://github.com/kylelarkin/flask */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body, select, input, textarea {
+  color: #333; }
+
+/* Custom text-selection colors (remove any text shadows:twitter.com/miketaylr/status/12228805301) */
+::-moz-selection {
+  background: #cccccc;
+  color: #000;
+  text-shadow: none; }
+
+::selection {
+  background: #cccccc;
+  color: #000;
+  text-shadow: none; }
+
+/* j.mp/webkit-tap-highlight-color */
+a:link {
+  -webkit-tap-highlight-color: #cccccc; }
+
+ins {
+  background-color: #cccccc;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #cccccc;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+* {
+  -webkit-box-sizing: "border-box";
+  -moz-box-sizing: "border-box";
+  box-sizing: "border-box"; }
+
+/* iOS fixes */
+html {
+  -webkit-text-size-adjust: none; }
+
+input[type=submit] {
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
+body {
+  color: #555555;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  font-weight: normal;
+  line-height: 1.5em; }
+
+a {
+  color: #333333; }
+  a:hover {
+    color: black; }
+
+h1 {
+  color: #333333;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  /* 16x1.5=24 */
+  line-height: 1em;
+  /* 48px */ }
+
+h2 {
+  color: #333333;
+  /* 24px */
+  font-size: 1.3125em;
+  /* 16x1.5=21 */ }
+
+h3 {
+  color: #333333;
+  font-size: 1.125em;
+  /* 16x1.125=18 */
+  line-height: 1.33333333333333em;
+  /* 24px */ }
+
+h4 {
+  color: #333333;
+  font-size: 0.875em;
+  /* 16x0.875=14 */
+  line-height: 1.71428571428571em;
+  /* 24px */ }
+
+p {
+  font-size: 1em;
+  /* 16x1=16 */
+  padding-bottom: 1em; }
+
+ul {
+  list-style: disc;
+  margin: 0 0 0 1.1em;
+  padding-bottom: 1em; }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding-bottom: 0; }
+    nav ul a {
+      text-decoration: none; }
+
+/* -------------------------------------------------
+** IE<9
+** ---------------------------------------------- */
+/* -------------------------------------------------
+** IE<8
+** ---------------------------------------------- */
+.lt-ie8 * {
+  box-sizing: border-box;
+  *behavior: url(/wp-content/themes/vespa/js/boxsizing.htc); }
