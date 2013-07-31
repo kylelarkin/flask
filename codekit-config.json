@@ -1,6 +1,6 @@
 {
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
-  "creatorBuild" : "8300",
+  "creatorBuild" : "8317",
   "files" : {
     "\/sass\/neat\/grid\/_row.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -26,26 +26,16 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/sass\/neat\/grid\/_fill-parent.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/neat\/grid\/_fill-parent.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/sass\/neat\/css\/_fill-parent.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/js\/PIE.php" : {
+    "\/img\/wp-login-logo-flask.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/PIE.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/img\/wp-login-logo-flask.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/wp-login-logo-flask.png",
+      "initialSize" : 4511,
+      "fileType" : 8192
     },
     "\/header.php" : {
       "ignoreWasSetByUser" : 0,
@@ -67,6 +57,15 @@
       "outputAbbreviatedPath" : "\/sass\/css\/_neat.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/js\/PIE.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/PIE.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/sidebar.php" : {
       "ignoreWasSetByUser" : 0,
@@ -281,6 +280,15 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/single.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/single.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/js\/enquire.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -291,15 +299,6 @@
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/js\/enquire.min-min.js",
       "fileType" : 64
-    },
-    "\/single.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/single.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/sass\/neat\/grid\/_media.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -565,16 +564,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/img\/wp-login-logo-flask.png" : {
+    "\/sass\/neat\/grid\/_fill-parent.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/wp-login-logo-flask.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/wp-login-logo-flask.png",
-      "initialSize" : 4511,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/sass\/neat\/grid\/_fill-parent.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/sass\/neat\/css\/_fill-parent.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/css\/ie.css" : {
       "ignoreWasSetByUser" : 0,
@@ -610,7 +610,10 @@
     "sassAutoOutputPathStyle" : 2,
     "stylusAutoOutputPathReplace2" : "css",
     "lessAutoOutputPathStyle" : 2,
+    "lessIECompatibility" : 1,
     "genericWebpageFileExtensionsString" : "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
+    "lessStrictUnits" : 0,
+    "lessStrictMath" : 0,
     "coffeeMinifyOutput" : 1,
     "javascriptOutputSuffix" : "-min",
     "jadeOutputStyle" : 0,
@@ -759,6 +762,7 @@
     "jadeCompileDebug" : 1,
     "slimRailsCompatible" : 0,
     "kitAutoOutputPathReplace2" : "",
+    "lessRelativeURLS" : 0,
     "lessDebugStyle" : 0,
     "javascriptAutoOutputPathRelativePath" : "",
     "slimAutoOutputPathStyle" : 0
