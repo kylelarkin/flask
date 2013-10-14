@@ -7,7 +7,7 @@
 // SASS-y IE Specific
 // ---------------------------------------------- */
 $shadow_alt: #333;
-$pie-behavior: url(/wp-content/themes/vespa/js/PIE.php); // BE SURE TO UPDATE THIS PATH
+$pie-behavior: url(/wp-content/themes/submit/js/PIE.php); // BE SURE TO UPDATE THIS PATH
 
 @mixin shadow-replace {
 	border-bottom: 1px solid $shadow_alt;
@@ -27,5 +27,5 @@ $pie-behavior: url(/wp-content/themes/vespa/js/PIE.php); // BE SURE TO UPDATE TH
 ** ---------------------------------------------- */
 .lt-ie8 {
 	//Hack for IE7 and lower box-sizing
-	* { box-sizing: border-box; *behavior: url(/wp-content/themes/vespa/js/boxsizing.htc); }
+	* { box-sizing: border-box; *behavior: url(/wp-content/themes/submit/js/boxsizing.htc); }
 } //end .lt-ie8

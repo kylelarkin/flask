@@ -1,0 +1,12 @@
+@import "neat-helpers";
+
+// Set Max Width of Outer Container
+$max-width: em(1280);
+
+// Visual Grid Toggle
+$visual-grid: false;
+
+// Setup Breakpoints
+$small: new-breakpoint(min-width 580px 12);
+$medium: new-breakpoint(min-width 768px 12);
+$large: new-breakpoint(min-width 1024px 12);

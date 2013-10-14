@@ -1,7 +1,0 @@
-@import "../neat/neat-helpers";
-
-$visual-grid: false;
-
-$small: new-breakpoint(min-width 580px 4);
-$medium: new-breakpoint(min-width 880px 12);
-$large: new-breakpoint(min-width 1088px 12);

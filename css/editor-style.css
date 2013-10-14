@@ -221,7 +221,7 @@ mark {
 html {
   -webkit-text-size-adjust: none; }
 
-input[type=submit] {
+input {
   -webkit-appearance: none;
   -moz-appearance: none; }
 
@@ -230,7 +230,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 100%;
   font-weight: normal;
-  line-height: 1.5em; }
+  line-height: 1.33em; }
 
 a {
   color: #333333; }
@@ -242,32 +242,35 @@ h1 {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.5em;
   /* 16x1.5=24 */
-  line-height: 1em;
-  /* 48px */ }
+  line-height: 1.33em;
+  margin: .5em 0; }
 
 h2 {
   color: #333333;
   /* 24px */
   font-size: 1.3125em;
-  /* 16x1.5=21 */ }
+  /* 16x1.5=21 */
+  line-height: 1.33em;
+  margin: .5em 0; }
 
 h3 {
   color: #333333;
   font-size: 1.125em;
   /* 16x1.125=18 */
-  line-height: 1.33333333333333em;
-  /* 24px */ }
+  line-height: 1.33em;
+  margin: .5em 0; }
 
 h4 {
   color: #333333;
   font-size: 0.875em;
   /* 16x0.875=14 */
-  line-height: 1.71428571428571em;
-  /* 24px */ }
+  line-height: 1.33em;
+  margin: .5em 0; }
 
 p {
   font-size: 1em;
   /* 16x1=16 */
+  line-height: 1.33em;
   padding-bottom: 1em; }
 
 ul {
