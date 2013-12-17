@@ -16,17 +16,4 @@
 			$i: $i + 1;
 		}
 	}
-
-	footer & {
-		float: none;
-		margin: 0;
-		@media screen and (min-width: $mq-desktop) {
-			margin: 0 0 16px;
-		}
-
-		a {
-			float: none;
-			clear: none;
-		}
-	}
 }
