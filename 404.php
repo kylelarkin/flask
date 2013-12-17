@@ -1,12 +1,9 @@
 <?php get_header(); ?>
 
-		<section class="main" role="main">
-		
-			<h1>404: Page Not Found</h1>
-			<p>Looks like the page you're looking for isn't here anymore.</p>
-			
-		</section>
-		
-		<?php get_sidebar(); ?>
+	<h1>404: Page Not Found</h1>
+	<p>Looks like the page you're looking for isn't here anymore.</p>
+	<p><a href="<?php bloginfo('url'); ?>">Return home.</a></p>
+
+	<?php //get_sidebar(); ?>
 
 <?php get_footer(); ?>
