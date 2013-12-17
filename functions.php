@@ -2,7 +2,7 @@
 /**
  * Include all partial php/helper files
  */
-foreach (glob(dirname(__FILE__) . 'lib/' . '*.php') as $filename) {
+foreach (glob(dirname(__FILE__) . '/lib/' . '*.php') as $filename) {
 	require( $filename );
 }
 

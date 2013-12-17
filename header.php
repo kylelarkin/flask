@@ -28,7 +28,7 @@
 	<header role="banner">
 		<div class="inner">
 			<nav class="header primary" role="navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary-header-menu', 'container' => false) ); ?>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary-header-menu-location', 'container' => false) ); ?>
 			</nav>
 		</div>
 	</header>
