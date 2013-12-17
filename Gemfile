@@ -1,4 +1,4 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
 group :development do
 	gem 'guard'
@@ -7,5 +7,6 @@ group :development do
 	gem 'uglifier'
 	gem 'guard-sprockets'
 	gem 'guard-livereload'
-
+	gem 'bourbon'
+	gem 'neat'
 end

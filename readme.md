@@ -18,8 +18,10 @@ Under the hood Flask uses Guard, Sprockets and LiveReload to make theme developm
 	- `/wp-content/themes/your-theme/sass/framework/_flask.scss` line 14
 4. Update `/wp-config.php` as usual (add db credentials, salts, and staging tld)
 5. Run `bundle install` from your wordpress root directory to install requisite gems
-6. Run `guard` from your wordpress root directory to begin watching your files
-7. Refresh your permalinks
+6. Run `bower install` from your wordpress root directory to install requisite packages
+7. Run `bourbon install` from your wordpress root directory to install bourbon includes
+8. Run `neat install` from your wordpress root directory to install neat includes
+9. Run `guard` from your wordpress root directory to begin watching your files
 
 **Note for Shared Hosting:** The line `Options All -Indexes` in .htaccess may cause 4xx/5xx errors site-wide on some shared servers. Please remove this line if necessary.
 
