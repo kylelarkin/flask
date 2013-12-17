@@ -15,7 +15,7 @@ Under the hood Flask uses Guard, Sprockets and LiveReload to make theme developm
 3. Rename the theme folder, and update paths in the following locations:
 	- `/Guardfile` line 4
 	- `/wp-config.php` line 85
-	- `/wp-content/themes/your-theme/sass/ie.scss`
+	- `/wp-content/themes/your-theme/sass/framework/_flask.scss` line 14
 4. Update `/wp-config.php` as usual (add db credentials, salts, and staging tld)
 5. Run `bundle install` from your wordpress root directory to install requisite gems
 6. Run `guard` from your wordpress root directory to begin watching your files

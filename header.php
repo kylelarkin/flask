@@ -27,7 +27,7 @@
 <body <?php body_class( flask_page_name() ); ?>>
 	<header role="banner">
 		<div class="inner">
-			<nav role="navigation">
+			<nav class="header primary" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary-header-menu', 'container' => false) ); ?>
 			</nav>
 		</div>
