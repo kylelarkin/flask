@@ -8,6 +8,7 @@ Under the hood Flask uses Guard, Sprockets and LiveReload to make theme developm
 ## Installation
 1. Copy the repository to your `/wp-content/themes` folder
 2. Move the following files out of the theme folder and into the wordpress root directory:
+	- `.bowerrc `
 	- `.htaccess `
 	- `Gemfile`
 	- `Guardfile`
@@ -18,9 +19,9 @@ Under the hood Flask uses Guard, Sprockets and LiveReload to make theme developm
 	- `/wp-content/themes/your-theme/sass/framework/_flask.scss` line 14
 4. Update `/wp-config.php` as usual (add db credentials, salts, and staging tld)
 5. Run `bundle install` from your wordpress root directory to install requisite gems
-6. Run `bower install` from your wordpress root directory to install requisite packages
-7. Run `bourbon install` from your wordpress root directory to install bourbon includes
-8. Run `neat install` from your wordpress root directory to install neat includes
+6. Run `bower install` from your wordpress root directory to install requisite packages into `/vendor`
+7. Run `bourbon install --path vendor` from your wordpress root directory to install bourbon into `/vendor`
+8. Run `cd vendor; neat install; cd ../` from your wordpress root directory to install neat into `/vendor` (neat 2.0 will eliminate this craziness)
 9. Run `guard` from your wordpress root directory to begin watching your files
 
 **Note for Shared Hosting:** The line `Options All -Indexes` in .htaccess may cause 4xx/5xx errors site-wide on some shared servers. Please remove this line if necessary.
