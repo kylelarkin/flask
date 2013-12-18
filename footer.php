@@ -10,7 +10,7 @@
 		</div>
 	</footer>
 
-	<?php wp_enqueue_script( 'site-js', get_bloginfo( 'template_directory' ) . '/js/public/script.min.js'); ?>
+	<?php wp_enqueue_script( 'site-js', get_bloginfo( 'template_directory' ) . '/js/public/script.js'); ?>
 
 	<?php wp_footer(); // required don't remove ?>
 </body>

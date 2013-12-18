@@ -1,12 +1,14 @@
 # A sample Guardfile
 # More info at https://github.com/guard/guard#readme
 
+require 'coffee_script'
+
 theme_folder = 'wp-content/themes/flask'
 
 puts "\nTHEME FOLDER DOESN'T EXIST\n\n" unless File.directory?(theme_folder)
 
 guard 'sass',
-	:load_paths => ["#{theme_folder}/sass", "bourbon/", "neat/"],
+	:load_paths => ["#{theme_folder}/sass", "bourbon/", "bower_components/", "neat/"],
 	:input => "#{theme_folder}/sass",
 	:output => "#{theme_folder}/css",
 	:all_on_start => true,
@@ -24,10 +26,10 @@ guard 'sass',
 		:color_output => false,
 	}
 
-guard 'sprockets', :destination => "#{theme_folder}/js/public", :asset_paths => ["#{theme_folder}/js/", 'bower_components/'], :minify => true, :root_file => '#{theme_folder}/js/public/script.min.js' do
-	watch(%r{#{theme_folder}/.+\.(js)$})
+guard 'sprockets', :destination => "#{theme_folder}/js/public", :asset_paths => ["#{theme_folder}/js/", 'bower_components/'], :minify => true do
+	watch(%r{#{theme_folder}/.+\.(js|coffee)$}) { "#{theme_folder}/js/script.js" }
 end
 
 guard 'livereload' do
-	watch(%r{#{theme_folder}/.+\.(erb|haml|slim|php|css|js)$})
+	watch(%r{#{theme_folder}/.+\.(erb|haml|slim|php|css|js|coffee)$})
 end

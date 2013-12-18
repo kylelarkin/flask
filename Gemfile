@@ -4,6 +4,7 @@ group :development do
 	gem 'guard'
 	gem 'guard-sass'
 	gem 'compass'
+	gem 'coffee-script'
 	gem 'uglifier'
 	gem 'guard-sprockets'
 	gem 'guard-livereload'
