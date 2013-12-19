@@ -2,10 +2,10 @@
 	</section>
 
 	<footer>
-		<nav class="footer">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary-footer-menu-location', 'container' => false) ); ?>
-		</nav>
 		<div class="inner">
+			<nav class="footer">
+				<?php wp_nav_menu( array( 'theme_location' => 'primary-footer-menu-location', 'container' => false) ); ?>
+			</nav>
 			<p>&copy; <?php echo date("Y"); ?> Client Name</p>
 		</div>
 	</footer>

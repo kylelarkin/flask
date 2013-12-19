@@ -94,3 +94,25 @@ mark {
 	-moz-hyphens: auto;
 	hyphens: auto;
 }
+
+// Media Object
+@mixin media-object($gutter: 10px){
+	&, .body {
+		overflow:hidden;
+		_overflow:visible;
+		zoom:1;
+	}
+	.img {
+		float:left; margin-right: $gutter;
+	}
+	.img img {
+		display:block;
+	}
+	.imgExt {
+		float:right; margin-left: $gutter;
+	}
+}
+
+// -------------------------------------------------
+// Project-specific Mixins
+// ---------------------------------------------- */

@@ -17,11 +17,17 @@ body {
 }
 
 .wrapper {
-	@include outer-container();
 	background: #ccc;
+
 	@include media($small) {
 		@include span-columns(6);
 		@include shift(3);
+	}
+	@include media($medium) {}
+	@include media($large) {}
+
+	.inner {
+		@include outer-container();
 	}
 }
 
