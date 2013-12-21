@@ -25,8 +25,8 @@
 
 		& > li {
 			//** If you're having issues with text aliasing cross-browser, try
-			//** adding this declaration, but watch out for bouncing slide images!
-			// -webkit-backface-visibility: visible;
+			//** removing this declaration, but watch out for bouncing slide images!
+			-webkit-backface-visibility: visible;
 		}
 	}
 	.flex-direction-nav a {
