@@ -40,9 +40,9 @@ if ( WP_ENV == 'local' ) {
 	/** MySQL hostname */
 	define('DB_HOST', 'localhost'); // local_db_host
 
-	define('WP_SITEURL', ".dev"); // local_site_url
+	define('WP_SITEURL', "http://.dev"); // local_site_url
 
-	define('WP_HOME', ".dev"); // local_home_url
+	define('WP_HOME', "http://.dev"); // local_home_url
 
 } elseif ( WP_ENV == 'staging') {
 	// ** MySQL settings - You can get this info from your web host ** //
@@ -58,9 +58,9 @@ if ( WP_ENV == 'local' ) {
 	/** MySQL hostname */
 	define('DB_HOST', ''); // staging_db_host
 
-	define('WP_SITEURL', ".com"); // staging_site_url
+	define('WP_SITEURL', "http://.com"); // staging_site_url
 
-	define('WP_HOME', ".com"); // staging_home_url
+	define('WP_HOME', "http://.com"); // staging_home_url
 
 } else {
 	// ** MySQL settings - You can get this info from your web host ** //
@@ -76,9 +76,9 @@ if ( WP_ENV == 'local' ) {
 	/** MySQL hostname */
 	define('DB_HOST', ''); // production_db_host
 
-	define('WP_SITEURL', ".com"); // production_site_url
+	define('WP_SITEURL', "http://.com"); // production_site_url
 
-	define('WP_HOME', ".com"); // production_home_url
+	define('WP_HOME', "http://.com"); // production_home_url
 
 }
 /** Set flask to the default template for WordPress to use. */
