@@ -1,16 +1,15 @@
 <?php get_header(); ?>
+	<?php if(have_posts()) : while(have_posts()) : the_post(); // start loop ?>
 
-	<?php if(have_posts()) : while(have_posts()) : the_post(); ?><!-- start loop -->
+	<article>
 
-		<section class="main" role="main">
-		
-			<h1><?php the_title(); ?></h1>
-			<?php the_content(); ?>
-			
-		</section>
-		
-		<?php get_sidebar(); ?>
+		<h1><?php the_title(); ?></h1>
+		<?php the_content(); ?>
 
-	<?php endwhile; endif; ?><!-- end loop -->
-	
+	</article>
+
+	<?php endwhile; endif; // end loop ?>
+
+	<?php //get_sidebar(); ?>
+
 <?php get_footer(); ?>

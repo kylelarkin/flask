@@ -1,16 +1,8 @@
-$(document).ready(function() {
-	
-});
+// Below is an example of how to import a javascript file,
+// that will be concatenated and uglified by guard and sprockets.
+// To use the require statement above the hash/pound to the
+// left of the keyword "require" needs to be removed.
 
-/* ENQUIRE JS SETUP
-enquire.register("screen and (min-width:580px)", {
-	
-    match: function() {
-    	$('.nav-wrapper').prependTo('header');
-    },
-    unmatch: function() {
-	    $('.nav-wrapper').prependTo('body');
-    }   
-
-});
-*/
+//= #require "jQuery/index.js"
+//= #require "bootstrap/dist/js/bootstrap.js"
+//= #require "flexslider/jquery.flexslider.js"

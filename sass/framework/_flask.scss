@@ -1,15 +1,18 @@
 /* SCSS Framework boilerplate from Flask: https://github.com/kylelarkin/flask */
+
 // -------------------------------------------------
 // Flask Bourbon Imports
 // ---------------------------------------------- */
 @import "bourbon";
-@import "grid-settings";
 @import "neat";
+@import "grid";
 
 
 // -------------------------------------------------
 // Flask Variables
 // ---------------------------------------------- */
+$theme-dir: "flask";
+
 $heading-font: Helvetica, Arial, sans-serif;
 $body-font: Helvetica, Arial, sans-serif;
 
@@ -23,14 +26,36 @@ $link-hover: #000;
 // -------------------------------------------------
 // Custom Text Selection Setup
 // ---------------------------------------------- */
-body,select,input,textarea{color:#333;}
-/* Custom text-selection colors (remove any text shadows:twitter.com/miketaylr/status/12228805301) */
-::-moz-selection{background:$highlight-color;color:#000;text-shadow:none;}
-::selection{background:$highlight-color;color:#000;text-shadow:none;}
-/* j.mp/webkit-tap-highlight-color */
-a:link{-webkit-tap-highlight-color:$highlight-color;}
-ins{background-color:$highlight-color;color:#000;text-decoration:none;}
-mark{background-color:$highlight-color;color:#000;font-style:italic;font-weight:bold;}
+body,select,input,textarea {
+	color:#333;
+}
+// Custom text-selection colors (remove any text shadows:twitter.com/miketaylr/status/12228805301)
+::-moz-selection {
+	background:$highlight-color;
+	color:#000;
+	text-shadow:none;
+}
+::selection {
+	background:$highlight-color;
+	color:#000;
+	text-shadow:none;
+}
+// j.mp/webkit-tap-highlight-color
+a:link {
+	-webkit-tap-highlight-color:$highlight-color;
+}
+ins {
+	background-color:$highlight-color;
+	color:#000;
+	text-decoration:none;
+
+}
+mark {
+	background-color:$highlight-color;
+	color:#000;
+	font-style:italic;
+	font-weight:bold;
+}
 
 
 // -------------------------------------------------
@@ -46,7 +71,7 @@ mark{background-color:$highlight-color;color:#000;font-style:italic;font-weight:
 	text-indent: -999px;
 	width: 0; // Set width
 }
-				
+
 // Remove UL Styling
 @mixin ul-reset {
 	list-style: none;
@@ -59,3 +84,35 @@ mark{background-color:$highlight-color;color:#000;font-style:italic;font-weight:
   font-size: ($size * 10) + px;
   font-size: $size + rem;
 }
+
+// Hyphenation (FF compatible)
+@mixin hyphenation(){
+	// -ms-word-break: break-all;
+	// word-break: break-all;
+	word-break: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+
+// Media Object
+@mixin media-object($gutter: 10px){
+	&, .body {
+		overflow:hidden;
+		_overflow:visible;
+		zoom:1;
+	}
+	.img {
+		float:left; margin-right: $gutter;
+	}
+	.img img {
+		display:block;
+	}
+	.imgExt {
+		float:right; margin-left: $gutter;
+	}
+}
+
+// -------------------------------------------------
+// Project-specific Mixins
+// ---------------------------------------------- */

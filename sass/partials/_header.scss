@@ -1,0 +1,10 @@
+header {
+	@include clearfix;
+
+	.inner {
+		@include outer-container();
+	}
+	nav {
+
+	}
+}
