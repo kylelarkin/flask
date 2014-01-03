@@ -13,8 +13,7 @@ body .gform_wrapper {
 		padding: 4px 2px 4px 2px;
 
 		&:focus {
-			outline: -webkit-focus-ring-color auto 2px;
-			outline-offset: -3px;
+			border: 1px solid lighten($body-color, 25%);
 		}
 	}
 
