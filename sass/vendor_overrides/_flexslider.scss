@@ -5,17 +5,17 @@
 		-moz-box-sizing: content-box;
 		box-sizing: content-box;
 	}
-	margin: 0;
-	background: #fff;
+	background: transparent;
 	border: none;
 	-webkit-border-radius: none;
 	-moz-border-radius: none;
 	-o-border-radius: none;
 	border-radius: none;
-	box-shadow: none;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	-o-box-shadow: none;
+	box-shadow: none;
+	margin: 0;
 	z-index: 0;
 
 	ul {
@@ -30,6 +30,12 @@
 		}
 	}
 	.flex-direction-nav a {
-		background-image: none;
+		&:before {
+			content: "";
+			display: none;
+		}
+		&.flex-disabled {
+			visibility: hidden;
+		}
 	}
 }
