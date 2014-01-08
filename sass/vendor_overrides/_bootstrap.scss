@@ -2,3 +2,9 @@
 	overflow: hidden;
 	zoom: 1;
 }
+
+// Mixins
+@mixin bs-uncollapse {
+	overflow: visible;
+	display: block;
+}

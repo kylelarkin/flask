@@ -95,6 +95,23 @@ mark {
 	hyphens: auto;
 }
 
+// Responsive images!
+@mixin img-respond(){
+	display: block;
+	width: 100%;
+}
+
+// CSS Navigation Dropdown Transitions (not for iPad)
+@mixin trans-fade-hidden {
+	@include transition(opacity $ani_speed linear 0ms, visibility $ani_speed linear 0ms);
+	visibility: hidden;
+	opacity: 0;
+}
+@mixin trans-fade-visible {
+	visibility: visible;
+	opacity: 1;
+}
+
 // Media Object
 @mixin media-object($gutter: 10px){
 	&, .body {
