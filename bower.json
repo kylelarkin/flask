@@ -25,7 +25,7 @@
 		"respond": "~1.4.1",
 		"bootstrap": "~3.0.3",
 		"enquire": "~2.1.0",
-		"flexslider": "https://github.com/woothemes/FlexSlider/archive/release-2-2-0.zip",
+		"flexslider": "https://github.com/woothemes/FlexSlider/archive/version/2.2.2.zip",
 		"fancybox": "~2.1.5"
 	}
 }

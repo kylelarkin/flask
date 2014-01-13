@@ -8,8 +8,10 @@ Under the hood Flask uses Guard, Sprockets and LiveReload to make theme developm
 ## Installation
 1. Copy the repository to your `/wp-content/themes` folder
 2. Move the following files out of the theme folder and into the wordpress root directory:
-	- `.bowerrc `
-	- `.htaccess `
+	- `.bowerrc`
+	- `.gitignore`
+	- `.htaccess`
+	- `bower.json`
 	- `Gemfile`
 	- `Guardfile`
 	- `wp-config.php`
