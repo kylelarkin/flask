@@ -5,6 +5,37 @@ header {
 		@include outer-container();
 	}
 	nav {
-
+		ul.menu {
+			// Styles for ALL <li>'s and <a>'s
+			li {
+				&:hover, &:active {}
+				a {
+					&:hover, &:active {}
+				}
+			}
+			// Styles for only TOP LEVEL <li>'s and <a>'s
+			& > li {
+				&:hover, &:active {}
+				& > a {
+					&:hover, &:active {}
+				}
+			}
+		}
+		ul.sub-menu {
+			// Styles for only CHILD LEVEL <li>'s and <a>'s
+			& > li {
+				&:hover, &:active {}
+				a {
+					&:hover, &:active {}
+				}
+			}
+		}
+		// Dropdown states
+		ul.sub-menu {
+			// @include trans-fade-hidden;
+		}
+		ul.menu > li:hover ul.sub-menu {
+			// @include trans-fade-visible;
+		}
 	}
 }

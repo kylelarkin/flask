@@ -5,6 +5,8 @@
 
 // Mixins
 @mixin bs-uncollapse {
-	overflow: visible;
-	display: block;
+	&.collapse {
+		overflow: visible;
+		display: block;
+	}
 }

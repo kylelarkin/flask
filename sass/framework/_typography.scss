@@ -10,11 +10,16 @@ body {
 }
 a {
 	color: $link-color;
-	&:hover { color: $link-hover; }
 
+	&:hover, &:focus {
+		color: $link-hover;
+	}
 	&.reverse {
 		color: $body-color;
-		&:hover { color: $link-color; }
+
+		&:hover, &:focus {
+			color: $link-color;
+		}
 	}
 }
 h1 {
