@@ -35,6 +35,7 @@ function flask_login_logo() { ?>
         body.login div#login h1 a {
             background: url('<?php bloginfo( 'template_directory' ) ?>/img/wp-login-logo-flask.png') no-repeat 0 0;
 			margin: 0 0 0 23px;
+			width: 274px;
         }
     </style>
 <?php }

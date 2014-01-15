@@ -1,7 +1,7 @@
 // -------------------------------------------------
 // Bootstrap
 // ---------------------------------------------- */
-@import "bootstrap/dist/css/bootstrap";
+// @import "bootstrap/dist/css/bootstrap";
 
 
 // -------------------------------------------------
@@ -47,12 +47,12 @@ body {
 .wrapper {
 	background: #ccc;
 
-	@include media($small) {
-		@include span-columns(6);
-		@include shift(3);
-	}
-	@include media($medium) {}
-	@include media($large) {}
+	// @include media($small) {
+	// 	@include span-columns(6);
+	// 	@include shift(3);
+	// }
+	// @include media($medium) {}
+	// @include media($large) {}
 
 	.inner {
 		@include outer-container();
