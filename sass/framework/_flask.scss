@@ -114,6 +114,15 @@ mark {
 	opacity: 1;
 }
 
+// Center element vertically without knowing height (IE9+) via http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+%vertical-align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
 // Media Object
 @mixin media-object($gutter: 10px){
 	&, .body {
