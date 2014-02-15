@@ -12,7 +12,7 @@
 		$i: 0;
 		@each $icon in fb, tw, pin, ig {
 			&.#{$icon} { background-position: ($i * -$width) 0; }
-			&.#{$icon}:hover { background-position: ($i * -$width) -22px; }
+			&.#{$icon}:hover { background-position: ($i * -$width) (-1 * $height); }
 			$i: $i + 1;
 		}
 	}

@@ -6,7 +6,7 @@
 			<nav class="footer">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary-footer-menu-location', 'container' => false) ); ?>
 			</nav>
-			<?php include(locate_template('partials/_social-icons.php')); ?>
+			<?php include(locate_template('modules/_social-icons.php')); ?>
 			<p>&copy; <?php echo date("Y"); ?> Client Name</p>
 		</div>
 	</footer>
