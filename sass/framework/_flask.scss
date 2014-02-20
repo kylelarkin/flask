@@ -64,6 +64,12 @@ mark {
 // Flask Mixins
 // ---------------------------------------------- */
 
+// Omega Reset
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}
+
 // Logo Setup
 @mixin logo {
 	@include retina-image('null', 0, 0); // ('file_name_sans_extension', height, width)
