@@ -7,10 +7,10 @@
 	}
 	background: transparent;
 	border: none;
-	-webkit-border-radius: none;
-	-moz-border-radius: none;
-	-o-border-radius: none;
-	border-radius: none;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-o-border-radius: 0px;
+	border-radius: 0px;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	-o-box-shadow: none;
@@ -30,6 +30,32 @@
 		}
 	}
 	.flex-direction-nav a {
+		// $sprite-height: 35px;
+		// $sprite-width: 18px;
+		// $padding: 10px;
+
+		// background: transparent url('../img/arrows.png') no-repeat 0 0;
+		// width: $sprite-width;
+		// height: $sprite-height;
+		// padding: $padding;
+
+		// &:hover, &:active {
+		// 	opacity: 1;
+		// }
+
+		// &.flex-prev {
+		// 	background-position: $padding $padding;
+		// 	// &:hover, &:active {
+		// 	// 	background-position: -$sprite-width $padding;
+		// 	// }
+		// }
+		// &.flex-next {
+		// 	background-position: $padding -$sprite-height;
+		// 	// &:hover, &:active {
+		// 	// 	background-position: -$sprite-width -$sprite-height;
+		// 	// }
+		// }
+
 		&:before {
 			content: "";
 			display: none;
