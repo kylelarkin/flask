@@ -21,6 +21,13 @@ a {
 			color: $link-color;
 		}
 	}
+	nav & {
+		text-decoration: none;
+
+		&:hover, &:active {
+			text-decoration: none;
+		}
+	}
 }
 h1 {
 	color: $heading-color;
