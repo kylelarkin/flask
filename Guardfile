@@ -16,7 +16,9 @@ guard 'sass',
 	:load_paths => ["#{theme_folder}/sass", "vendor/bourbon", "vendor/bower_components", "vendor/neat"],
 	:input => "#{theme_folder}/sass",
 	:output => "#{theme_folder}/css",
-	:all_on_start => true
+	:all_on_start => true,
+	:quiet => true,
+	:style => :nested
 
 guard 'sprockets', :destination => "#{theme_folder}/js/public", :asset_paths => ["#{theme_folder}/js/", 'vendor/bower_components'], :minify => true do
 	watch(%r{#{theme_folder}/.+\.(js|coffee)$}) { "#{theme_folder}/js/script.js" }
