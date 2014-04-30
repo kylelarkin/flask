@@ -25,5 +25,5 @@ guard 'sprockets', :destination => "#{theme_folder}/js/public", :asset_paths => 
 end
 
 guard 'livereload' do
-	watch(%r{#{theme_folder}/.+\.(erb|haml|slim|php|css|js|coffee)$})
+	watch(%r{#{theme_folder}/.+\.(erb|haml|slim|php|css|js)$})
 end
