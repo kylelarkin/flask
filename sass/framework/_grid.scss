@@ -21,3 +21,7 @@ $medium:          new-breakpoint(min-width $medium-breakpoint $no_of_columns);
 $medium-only:     new-breakpoint(min-width $medium-breakpoint max-width ($large-breakpoint - 1) $no_of_columns);
 $pre-large-only:  new-breakpoint(max-width ($large-breakpoint - 1) $no_of_columns);
 $large:           new-breakpoint(min-width $large-breakpoint $no_of_columns);
+
+// Set Neat grid settings to match Bourbon for Omega Reset (https://github.com/thoughtbot/neat#getting-started)
+$fg-column: $column;
+$fg-gutter: $gutter;
