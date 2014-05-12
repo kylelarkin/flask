@@ -1,10 +1,10 @@
-header {
+header.body__header {
 	@include clearfix;
 
 	.inner {
 		@include outer-container();
 	}
-	nav {
+	nav.nav__primary {
 		ul.menu {
 			// Styles for ALL <li>'s and <a>'s
 			li {
