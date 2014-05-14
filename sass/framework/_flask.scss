@@ -11,18 +11,7 @@
 // -------------------------------------------------
 // Flask Variables
 // ---------------------------------------------- */
-$theme-dir: "flask";
-
-$heading-font: Helvetica, Arial, sans-serif;
-$body-font: Helvetica, Arial, sans-serif;
-
-$body-color: #555;
-$heading-color: #333;
-$highlight-color: #ccc;
-$link-color: #333;
-$link-hover: #000;
-
-$ani_speed: 250ms;
+@import "variables";
 
 
 // -------------------------------------------------
@@ -64,7 +53,7 @@ mark {
 // Flask Mixins
 // ---------------------------------------------- */
 
-// Omega Reset
+// Omega Reset (via http://joshfry.me/notes/omega-reset-for-bourbon-neat/)
 @mixin omega-reset($nth) {
   &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
   &:nth-child(#{$nth}+1) { clear: none }
@@ -150,3 +139,4 @@ mark {
 // -------------------------------------------------
 // Project-specific Mixins
 // ---------------------------------------------- */
+@import "mixins";
