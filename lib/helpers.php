@@ -43,7 +43,7 @@ if (!function_exists('get_post_id_from_slug')) {
 		global $wpdb;
 		$id = $wpdb->get_var(
 			$wpdb->prepare(
-				"SELECT ID FROM $wpdb->posts WHERE post_name = '%s'",
+				"SELECT ID FROM $wpdb->posts WHERE post_name = '%s' AND post_type not in ('nav_menu_item', 'revision')",
 				$slug
 			)
 		);
@@ -57,5 +57,20 @@ if (!function_exists('get_post_id_from_slug')) {
 if (!function_exists('slugify')) {
 	function slugify($string) {
 		return sanitize_title_with_dashes($string);
+	}
+}
+
+/**
+ * Get everything you could want about a featured image
+ */
+if (!function_exists('get_featured_image')) {
+	function get_featured_image($id = null) {
+		if (!$id) {
+			global $post;
+			$id = $post->ID;
+
+			if (!$id) return false;
+		}
+		return wp_prepare_attachment_for_js( get_post_thumbnail_id( $id ) );
 	}
 }

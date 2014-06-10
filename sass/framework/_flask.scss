@@ -119,17 +119,23 @@ mark {
 }
 
 // Media Object
-@mixin media-object($gutter: 10px){
+@mixin media-object($gutter: 10px, $img-width: 30%){
 	&, .body {
-		overflow:hidden;
-		_overflow:visible;
-		zoom:1;
+		@media screen and (min-width: $small-breakpoint) {
+			overflow:hidden;
+			_overflow:visible;
+			zoom:1;
+		}
 	}
 	.img {
-		float:left; margin-right: $gutter;
+		float:left;
+		margin-right: $gutter;
+		margin-bottom: 10px;
+		width: $img-width;
 	}
 	.img img {
-		display:block;
+		display: block;
+		width: 100%;
 	}
 	.imgExt {
 		float:right; margin-left: $gutter;
