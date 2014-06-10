@@ -19,7 +19,8 @@ add_filter("gform_init_scripts_footer", "init_scripts");
  */
 function flask_scripts_init() {
 	wp_deregister_script( 'jquery' );
-	wp_register_script( 'jquery', get_bloginfo( 'template_directory' ) . '/js/public/script.js', false, null, true); // Set last param to false if getting js errors
+	wp_register_script( 'jquery', get_bloginfo( 'template_directory' ) . '/js/dist/libs.min.js', false, null, true); // Set last param to false if getting js errors
 	wp_enqueue_script( 'jquery' );
+	wp_enqueue_script( 'app', get_bloginfo( 'template_directory' ) . '/js/dist/app.js', array('jquery') );
 }
 add_action('wp_enqueue_scripts', 'flask_scripts_init');
