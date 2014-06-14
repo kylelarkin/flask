@@ -60,8 +60,6 @@ button,input,select,textarea{margin:0;}
 button{width:auto;overflow:visible;}
 /* scale images in IE7 more attractively */
 .lt-ie8 img{-ms-interpolation-mode:bicubic;}
-/* prevent BG image flicker upon hover */
-.lt-ie7 html{filter:expression(document.execCommand("BackgroundImageCache",false,true));}
 /* let's clear some floats */
 .clearfix:before,.clearfix:after{content:"\0020";display:block;height:0;overflow:hidden;}
 .clearfix:after{clear:both;}
