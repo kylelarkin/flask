@@ -59,7 +59,7 @@ $ ->
 	# 		# initalize resize event listener
 	# 		init: (callback) ->
 	# 			if window.requestAnimationFrame
-	# 				window.addEventListener('resize', resize)
+	# 				$window.on('resize', resize)
 	# 				if callback
 	# 					addCallback(callback)
 	# 		# public method to add additional callback
