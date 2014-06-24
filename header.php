@@ -11,13 +11,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<title><?php bloginfo('name'); ?><?php wp_title('|'); ?></title>
 
+	<!--[if lte IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="<?php bloginfo( 'template_directory' ); ?>/js/respond.min.js"></script>
+	<![endif]-->
+
 	<?php wp_head(); ?>
 
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/libs.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/screen.css" />
 	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<script src="<?php bloginfo( 'template_directory' ); ?>/js/respond.min.js"></script>
 		<link href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<![endif]-->
 	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="<?php bloginfo('atom_url'); ?>" />
