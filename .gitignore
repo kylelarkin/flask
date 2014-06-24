@@ -1,5 +1,3 @@
 .codekit-cache
 .DS_Store
 .sass-cache
-bower_components
-vendor

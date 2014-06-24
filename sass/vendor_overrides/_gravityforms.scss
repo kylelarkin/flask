@@ -16,19 +16,32 @@ body .gform_wrapper {
 			border: 1px solid lighten($body-color, 25%);
 		}
 	}
-
 	.top_label, .left_label, .right_label {
 		.gfield_label {
 			font-weight: normal;
+			color: $body-color;
 		}
 	}
-
+	label, .instruction, .gfield_required {
+		color: $body-color;
+	}
 	.gform_footer {
 		margin: 0;
 
 		input.button,
 		input[type=submit] {
 			-webkit-appearance: inherit;
+		}
+	}
+	.gform_footer input.button, .gform_footer input[type=submit] {
+		background: $body-color;
+		border: none;
+		color: white;
+		padding: .45em 0.75em .35em;
+		outline: 0;
+
+		&:hover, &:active {
+			background: lighten($body-color, 25%);
 		}
 	}
 }
